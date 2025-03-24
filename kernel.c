@@ -33,7 +33,7 @@ void putchar(char ch) {
 void kernel_main(void) {
     memset(__bss, 0, (size_t) __bss_end - (size_t) __bss);
 
-    printf("Hello, %s!\n", "World");
+    PANIC("Hello, %s!\n", "World");
     printf("355 + 113 = %d\n", 355 + 113);
     printf("My favourite colour is %x\n", 0x1fee34);
 
