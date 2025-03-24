@@ -17,7 +17,7 @@ void printf(const char *fmt, ...) {
                     putchar('%');
                     break;
                 case 's':   // Prints null-terminated strings
-                    const char *s = va_arg(bargs, const char *);
+                    const char *s = va_arg(vargs, const char *);
                     while (*s) {
                         putchar(*s);
                         s++;
